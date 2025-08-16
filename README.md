@@ -1,6 +1,6 @@
-# homebridge-esphome-ac
+# homebridge-esphome-haier-ac
 
-[Homebridge](https://homebridge.io) plugin for ESPHome AC Accessories.
+[Homebridge](https://homebridge.io) plugin for ESPHome Haier AC Accessories.
 
 # How to install this fork
 
