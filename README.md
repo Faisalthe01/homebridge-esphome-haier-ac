@@ -19,7 +19,8 @@ I have fixed the following and can be used with Haier AC
 ## Auto Mode
 - Supports **two selectable temperatures** (low and high).  
 - HomeKit sends the **midpoint temperature** to the AC.  
-- Default visual values: **Low = 20°C, High = 24°C**, for a better interface display.  
+- Default visual values: **Low = 20°C, High = 24°C**, for a better interface display.
+- Syncs from AC remote or Haier app, it will show Low value as 2 below the set temperature and High vale as 2 above the set temperature
 
 ## Dry / Fan Modes
 - These modes are not fully supported by HomeKit.  
