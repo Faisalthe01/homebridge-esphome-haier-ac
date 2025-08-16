@@ -4,11 +4,36 @@
 
 ## Fixes from original plugin
 
-This forks fixed the issue where the accessory doesn't change to IDLE state if it reaches the target temperature.
+I have fixed the following and can be used with Haier AC
 
-This fork enables AUTO mode
+# Haier AC HomeKit Integration – Features & Improvements
 
-This fork fixed to restore the last mode when turning on the AC from the HomeKit tile
+## Heat / Cool Mode
+- HomeKit shows the correct **current state**:
+  - When the target temperature is reached, the tile displays **“Heat”** (heat mode) or **“Cool”** (cool mode).  
+  - When actively heating or cooling, it displays **“Heating”** or **“Cooling”**.  
+
+## Auto Mode
+- Supports **two selectable temperatures** (low and high).  
+- HomeKit sends the **midpoint temperature** to the AC.  
+- Default visual values: **Low = 20°C, High = 24°C**, for a better interface display.  
+
+## Dry / Fan Modes
+- These modes are not fully supported by HomeKit.  
+- If changed via AC remote or Haier app, HomeKit shows the AC in **“IDLE”** state.  
+
+## Fan Speed
+- Supports **AUTO, LOW, MID, HIGH** fan speeds.  
+- **Duplicate commands are avoided**.  
+- Changes via AC remote or Haier app are **reflected in HomeKit**.  
+
+## Swing Mode
+- Changes via AC remote or Haier app are **reflected in HomeKit**.  
+
+## Other Changes
+- AC **restores the last mode** when turned on from HomeKit.  
+- AC **temperature and mode state** are always synchronized with HomeKit.  
+
 
 ## Why this plugin?
 
@@ -22,7 +47,7 @@ You can configure each of the esphome devices directly from the Homebridge UI or
 
 The plugin will automatically collect your configurations from ESPHome and will allow those to be controlled from HomeKit
 
-* DRY and FAN modes currently not supported.
+
 
 
 -------------------------------------------
