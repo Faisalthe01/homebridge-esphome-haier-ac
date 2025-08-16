@@ -2,6 +2,9 @@
 
 [Homebridge](https://homebridge.io) plugin for ESPHome AC Accessories.
 
+# How to install this fork
+
+sudo npm install -g https://github.com/Faisalthe01/homebridge-esphome-haier-ac
 
 -----------------------------------------------------------------------------
 # Fixes from original plugin
