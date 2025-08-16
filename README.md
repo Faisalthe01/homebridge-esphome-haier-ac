@@ -2,11 +2,9 @@
 
 [Homebridge](https://homebridge.io) plugin for ESPHome AC Accessories.
 
-## Fixes from original plugin
+# Fixes from original plugin
 
 I have fixed the following and can be used with Haier AC
-
-# Haier AC HomeKit Integration – Features & Improvements
 
 ## Heat / Cool Mode
 - HomeKit shows the correct **current state**:
