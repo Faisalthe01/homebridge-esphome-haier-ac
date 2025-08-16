@@ -2,6 +2,8 @@
 
 [Homebridge](https://homebridge.io) plugin for ESPHome AC Accessories.
 
+
+-----------------------------------------------------------------------------
 # Fixes from original plugin
 
 I have fixed the following and can be used with Haier AC
@@ -30,7 +32,9 @@ I have fixed the following and can be used with Haier AC
 
 ## Other Changes
 - AC **restores the last mode** when turned on from HomeKit.  
-- AC **temperature and mode state** are always synchronized with HomeKit.  
+- AC **temperature and mode state** are always synchronized with HomeKit.
+
+--------------------------------------------------------------------------------------
 
 
 ## Why this plugin?
