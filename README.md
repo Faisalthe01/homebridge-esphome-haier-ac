@@ -2,6 +2,10 @@
 
 [Homebridge](https://homebridge.io) plugin for ESPHome Haier AC Accessories.
 
+if you like to Integrate Haier AC with ESPHome module. Here are the instructions, you can buy ESPHome chip and some wiriing 
+
+https://esphome.io/components/climate/haier.html
+
 # How to install this fork
 
 sudo npm install -g https://github.com/Faisalthe01/homebridge-esphome-haier-ac
