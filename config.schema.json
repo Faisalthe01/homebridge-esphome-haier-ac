@@ -1,16 +1,16 @@
 {
-  "pluginAlias": "ESPHomeAC",
+  "pluginAlias": "HaierAC",
   "pluginType": "platform",
   "singular": true,
-  "headerDisplay": "Homebridge plugin for ESPHome AC Controller",
-  "footerDisplay": "Created by @nitaybz",
+  "headerDisplay": "Homebridge plugin for ESPHome Haier AC Controller",
+  "footerDisplay": "Created by @Faisalthe01",
   "schema": {
       "type": "object",
       "properties": {
           "name": {
               "title": "Plugin Name (for logs)",
               "type": "string",
-              "default": "ESPHomeAC",
+              "default": "HaierAC",
               "required": false
           },
           "debug": {
@@ -48,19 +48,14 @@
                       "type": "string",
                       "required": false
                   }
-
                 }
               }
           }
       }
   },
-    "layout": [
-      {
-        "key": "name"
-      },
-      {
-        "key": "debug"
-      },
+  "layout": [
+      { "key": "name" },
+      { "key": "debug" },
       {
         "key": "devices",
         "type": "array",
@@ -74,7 +69,7 @@
           "devices[].host",
           "devices[].port",
           "devices[].encryptionKey"
-          ]
+        ]
       }
-    ]
-} 
+  ]
+}
