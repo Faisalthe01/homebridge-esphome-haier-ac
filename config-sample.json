@@ -6,15 +6,16 @@
     "pin": "031-45-154"
   },
 
-  "description": "This is an advanced example configuration for the esphome-ac homebridge plugin",
+  "description": "Sample configuration for homebridge-esphome-haier-ac plugin (Homebridge 2.0 compatible)",
+  
   "platforms": [
     {
-      "platform": "ESPHomeAC",
-      "name": "ESPHomeAC",
+      "platform": "HaierAC",
+      "name": "HaierAC",
       "debug": false,
       "devices": [
         {
-          "name": "My AC",
+          "name": "Living Room AC",
           "host": "192.168.1.120",
           "port": 6053,
           "encryptionKey": ""
@@ -23,6 +24,5 @@
     }
   ],
 
-  "accessories": [
-  ]
+  "accessories": []
 }
