@@ -11,7 +11,9 @@ Now it is Homebridge 2.0 compatible
 
 # How to install this fork
 
-npm i homebridge-esphome-haier-ac
+```bash
+npm install -g homebridge-esphome-haier-ac
+```
 
 -----------------------------------------------------------------------------
 # Fixes from original plugin
