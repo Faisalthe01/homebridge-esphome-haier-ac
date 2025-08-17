@@ -5,9 +5,7 @@
     "port": 51826,
     "pin": "031-45-154"
   },
-
-  "description": "Sample configuration for homebridge-esphome-haier-ac plugin (Homebridge 2.0 compatible)",
-  
+  "description": "Sample configuration for the homebridge-esphome-haier-ac plugin",
   "platforms": [
     {
       "platform": "HaierAC",
@@ -15,7 +13,7 @@
       "debug": false,
       "devices": [
         {
-          "name": "Living Room AC",
+          "name": "My Haier AC",
           "host": "192.168.1.120",
           "port": 6053,
           "encryptionKey": ""
@@ -23,6 +21,5 @@
       ]
     }
   ],
-
   "accessories": []
 }
