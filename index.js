@@ -1,43 +1,39 @@
-const ESPHome = require('./lib/esphome')
-const PLUGIN_NAME = 'homebridge-esphome-ac'
-const PLATFORM_NAME = 'ESPHomeAC'
+const ESPHome = require('./lib/esphome');
+const PLUGIN_NAME = 'homebridge-esphome-haier-ac';
+const PLATFORM_NAME = 'ESPHomeAC';
+
 module.exports = (api) => {
-	api.registerPlatform(PLUGIN_NAME, PLATFORM_NAME, ESPHomeAC)
-}
+  api.registerPlatform(PLUGIN_NAME, PLATFORM_NAME, ESPHomeAC);
+};
 
 class ESPHomeAC {
+  constructor(log, config, api) {
+    this.api = api;
+    this.log = log;
 
-	constructor(log, config, api) {
-		this.api = api
-		this.log = log
+    this.accessories = [];
+    this.esphomeDevices = {};
+    this.PLUGIN_NAME = PLUGIN_NAME;
+    this.PLATFORM_NAME = PLATFORM_NAME;
+    this.name = config.name || PLATFORM_NAME;
+    this.devices = config.devices || [];
+    this.debug = config.debug || false;
 
-		this.accessories = []
-		this.esphomeDevices = {}
-		this.PLUGIN_NAME = PLUGIN_NAME
-		this.PLATFORM_NAME = PLATFORM_NAME
-		this.name = config.name || PLATFORM_NAME
-		this.devices = config.devices || []
-		this.debug = config.debug || false
+    // debug helper
+    this.log.easyDebug = (...content) => {
+      if (this.debug) {
+        this.log(`${content.join(' ')}`);
+      } else {
+        this.log.debug(`${content.join(' ')}`);
+      }
+    };
 
-		
-		// define debug method to output debug logs when enabled in the config
-		this.log.easyDebug = (...content) => {
-			if (this.debug) {
-				this.log(content.reduce((previous, current) => {
-					return previous + ' ' + current
-				}))
-			} else
-				this.log.debug(content.reduce((previous, current) => {
-					return previous + ' ' + current
-				}))
-		}
+    // Wait for Homebridge to finish launching
+    this.api.on('didFinishLaunching', () => ESPHome.init.call(this));
+  }
 
-		this.api.on('didFinishLaunching', ESPHome.init.bind(this))
-
-	}
-
-	configureAccessory(accessory) {
-		this.log.easyDebug(`Found Cached Accessory: ${accessory.displayName} (${accessory.context.deviceId}) `)
-		this.accessories.push(accessory)
-	}
+  configureAccessory(accessory) {
+    this.log.easyDebug(`Found Cached Accessory: ${accessory.displayName} (${accessory.context.deviceId})`);
+    this.accessories.push(accessory);
+  }
 }
