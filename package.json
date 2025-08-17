@@ -1,28 +1,26 @@
 {
   "name": "homebridge-esphome-haier-ac",
+  "version": "0.0.5",
   "description": "Homebridge plugin for ESPHome Haier AC accessories",
-  "version": "2.0.0",
+  "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/nitaybz/homebridge-esphome-haier-ac.git"
+    "url": "git://github.com/Faisalthe01/homebridge-esphome-haier-ac.git"
   },
-  "license": "MIT",
-  "preferGlobal": true,
   "keywords": [
     "homebridge-plugin",
     "homebridge-esphome",
     "homebridge-esphome-haier-ac",
     "esphome",
-    "esphome-ac",
     "climate"
   ],
-  "bugs": {
-    "url": "https://github.com/Faisalthe01/homebridge-esphome-haier-ac/issues"
-  },
+  "author": "Faisalthe01",
+  "license": "MIT",
   "engines": {
     "node": ">=18.0.0",
     "homebridge": ">=1.5.0"
   },
+  "preferGlobal": true,
   "dependencies": {
     "@2colors/esphome-native-api": "^1.2.3"
   },
