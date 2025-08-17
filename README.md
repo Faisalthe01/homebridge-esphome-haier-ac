@@ -6,6 +6,8 @@ if you like to Integrate Haier AC with ESPHome module. Here are the instructions
 
 https://esphome.io/components/climate/haier.html
 
+# Homebridge 2.0 compatible
+
 # How to install this fork
 
 sudo npm install -g https://github.com/Faisalthe01/homebridge-esphome-haier-ac
