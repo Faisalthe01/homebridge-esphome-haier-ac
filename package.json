@@ -7,6 +7,10 @@
     "type": "git",
     "url": "git+https://github.com/Faisalthe01/homebridge-esphome-haier-ac.git"
   },
+  "homepage": "https://github.com/Faisalthe01/homebridge-esphome-haier-ac",
+  "bugs": {
+    "url": "https://github.com/Faisalthe01/homebridge-esphome-haier-ac/issues"
+  },
   "keywords": [
     "homebridge-plugin",
     "homebridge-esphome",
