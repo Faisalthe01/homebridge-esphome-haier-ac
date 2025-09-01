@@ -1,6 +1,6 @@
 {
   "name": "homebridge-esphome-haier-ac",
-  "version": "2.0.5",
+  "version": "2.1.0",
   "description": "Homebridge plugin for ESPHome Haier AC accessories",
   "main": "index.js",
   "repository": {
