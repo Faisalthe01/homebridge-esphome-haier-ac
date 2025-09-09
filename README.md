@@ -1,5 +1,7 @@
 # homebridge-esphome-haier-ac
 
+[![verified-by-homebridge](https://img.shields.io/badge/homebridge-verified-blueviolet?color=%23491F59&style=for-the-badge&logoColor=%23FFFFFF&logo=homebridge)](https://github.com/homebridge/homebridge/wiki/Verified-Plugins)
+
 [Homebridge](https://homebridge.io) plugin for ESPHome Haier AC Accessories.
 
 if you like to Integrate Haier AC with ESPHome module. Here are the instructions, you can buy ESPHome chip and some wiring 
